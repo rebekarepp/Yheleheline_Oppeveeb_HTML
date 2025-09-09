@@ -9,7 +9,39 @@ img {
         font-weight: bold;
       }
 
+      body {
+  color: white; 
+}
+      em u {
+  color: rgb(254, 181, 255);
+}
 
-  
-  
-  
+nav a {
+  color: #ffffff;  
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(255, 0, 0);     
+  text-decoration: underline;
+}
+
+.nav {
+  display: flex;         
+  justify-content: center; 
+  gap: 1rem;            
+  list-style: none;    
+  margin: 0;               
+  padding: 0;            
+}
+
+.gmail {
+  display: flex;
+  align-items: center; 
+  gap: 6px;           
+}
+
+.gmail-icon {
+  width: 20px;
+  height: 20px;
+}

@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="et">
-</head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, CSS">
     <meta name="description" content="...">
    <title>Üheleheline õppeveeb</title>
    <link rel="stylesheet" href="CSS/styles.css">
-  <head>
-    <main>
+   <link rel="stylesheet" href="CSS/background.css">
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
     <h1>Üheleheline õppeveeb</h1>
-  </main>
-  <body>
-    <img src="images/dottore.png" alt="ilus mees" />
-    <p class="username">Rebeka Repp</p>
-    <p>Tere tulemast!</p>
-  </body>
-  <header>
-    <nav aria-label="Põhinavigatsioon">
-      <a href="#sissejuhatus">Sissejuhatus</a>
-      <a href="#teooria">Teooria</a>
-      <a href="#kontakt">Kontakt</a>
+    <nav arial aria-label="Põhinavigatsioon">
+      <ul class="nav">
+<li><a href="#sissejuhatus">Sissejuhatus</a></li>
+<li><a href="#teooria">Teooria</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+      </ul>
     </nav>
-  </header>
+  </div>
+</div>
   <main>
     <section id="sissejuhatus">
       <h2>Sissejuhatus</h2>
@@ -31,14 +30,30 @@
     </section>
     <section id="teooria">
       <h2>Teooria</h2>
-      <p><em>HTML tähendus</em></p>
+      <p><em><u>HTML tähendus</u></em></p>
       <p>HTML on lühend ingliskeelsest terminist Hyper Text Markup Language. HTML on veebilehtede loomise standardne märgistuskeel. HTML kirjeldab veebilehe struktuuri. HTML koosneb elementide seeriast. HTML-elemendid ütlevad brauserile, kuidas sisu kuvada.</p>
+      <p><em><u>Allalaadimine ja allatõmbamine githubi kaudu</u></em></p>
+      <p> Allalaadimine: git add. -> git commit -m "tekst" -> git push</p>
+      <p> Allatõmbamine: git pull</p>
+      <p><em><u>Vabavaraline meedia</u></em></p>
+      <p>Pildid -> Unsplash, Pexels, Pixabay </p>
+      <p>Videod -> Pexels Video, Coverr </p>
+      <p>Ikoonid/SVG -> Heroicons, Font Awesome Free, SVGRepo </p>
+      <p>Helid -> Freesound, Mixkit </p>
+            <p><em><u>Lühike õpetav video</u></em></p>
+            <video controls width="640" height="360" poster="video/vid pic.png">
+              <source src="video/HTML in 5 minutes - Aaron Jack (1080p, h264).mp4" type="video/mp4">
+            </video>
     </section>
     <section id="kontakt">
       <h2>Kontakt</h2>
       <p><em>Minu kontaktandmed</em></p>
-      <p>Gmail: rebeka.repp@voco.ee</p>
-      <p>Telefon: 510977470</p>
+    <img src="images/dottore.png" alt="ilus mees">
+    <p class="username">Rebeka Repp</p>
+    <p>Mulle meeldib reisida ja videomänge mängida</p>
+    <p>
+      <img src="images/email-svgrepo-com-2.svg" alt="Gmail logo" class="gmail-icon">
+  Gmail: rebeka.repp@voco.ee</p>
     </section>
     <head>
       <link rel="stylesheet" href="CSS/background.css">
