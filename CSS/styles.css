@@ -51,20 +51,3 @@ nav a:hover {
   height: 280px;
   border-radius: 10px;
 }
-
-@font-face {
-  font-family: "Saphifen";
-  src: url("fonts/Saphifen.woff2") format("woff2"),
-    url("fonts/Saphifen.woff") format("woff"),
-    url("fonts/Saphifen.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: "Saphifen", sans-serif;
-}
-
-h1 {
-  font-family: "Saphifen", serif;
-}
