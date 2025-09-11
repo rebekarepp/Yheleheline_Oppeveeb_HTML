@@ -13,26 +13,40 @@ body {
   color: white;
 }
 em u {
-  color: rgb(254, 181, 255);
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: rgb(255, 0, 0);
+  color: #7586c7;
+  font-weight: bold;
+  font-size: 1.2rem;
   text-decoration: underline;
 }
 
+.nav a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 0 1.5rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #7586c7;
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: #2f2745;
+}
+
 .nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 1.5rem;
 }
 
 .gmail {
@@ -50,4 +64,29 @@ nav a:hover {
   width: 500px;
   height: 280px;
   border-radius: 10px;
+}
+
+@font-face {
+  font-family: "Saphifen";
+  src: url("fonts/saphifen-webfont.woff2") format("woff2"),
+    url("fonts/saphifen-webfont.woff") format("woff");
+}
+
+h1 {
+  font-family: "Saphifen", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  font-family: "Saphifen", sans-serif;
+  font-size: clamp(1.75em, 4vw, 2.5rem);
+  margin: 2rem 0 0.5rem 0;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
 }
