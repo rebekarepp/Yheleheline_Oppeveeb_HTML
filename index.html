@@ -31,6 +31,8 @@
       <h2>Sissejuhatus</h2>
       <p><em><u>Mis on HTML?</u></em></p>
       <p>Hüperteksti märgistuskeel, standardiseeritud süsteem tekstifailide sildistamiseks, et saavutada veebilehtedel fondi-, värvi-, graafika- ja hüperlingiefekte.</p>
+   <p><em><u>Mis on CSS?</u></em></p>
+      <p>CSS on küljendamisel kasutatav märgistuskeel, milles märgitakse üles peamiselt veebilehtede kujundust. </p>
     </section>
     <section id="teooria">
       <h2>Teooria</h2>
@@ -49,7 +51,7 @@
             <source src="video/HTMLin5minutes-AaronJack(1080p,h264).mp4" type="video/mp4">
             </video>
              <p><em><u>Kasulikud kohad</u></em></p>
-             <body>
+             <div class="gif-grid">
              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements" target="_blank" rel="noopener noreferrer">
               <img src="images/img1.gif" alt="gif lilla" class="gif" ></a>
              <a href="https://www.w3schools.com/Html/" target="_blank" rel="noopener noreferrer">
@@ -58,9 +60,81 @@
               <img src="images/img2.gif" alt="gif lilla" class="gif" loading="lazy"></a>
              <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer">
               <img src="images/img4.gif" alt="gif lilla" class="gif" loading="lazy"></a>
-             </body>
-      <p><em><u>HTML faili seletus</u></em></p>     
-      <p>1. Dokumendi algus:</p>
+             </div>
+     <p><em><u>HTML faili seletus</u></em></p>     
+  <p class="tumedam">1. Struktuur </p>
+  <p>DOCTYPE HTML -> ütleb brauserile, et tegemist on HTML dokumendiga </p>
+  <p> html lang="et" -> lang="et" näitab, et leht on eesti keeles</p>
+  <p> head -> sisaldab andmeid, mida külastaja ei näe</p>
+  <p> body -> kogu nähtav sisu, mida ka kasutaja näaeb </p>
+  <p class="tumedam">2. Meta ja lingid</p>
+  <p> Meta charset="UTF-8" -> määrab tähemärgikodeeringu (UTF-8, et täpitähed töötaksid)</p>
+  <p>meta name="viewport" content="width=device-width, initial-scale=1.0" -> muutab lehe mobiilisõbralikuks</p>
+  <p>title -> veebilehe vahekaardi pealkiri</p>
+  <p>link rel="..." href="...css -> ühendab CSS-faili</p>
+  <p class="tumedam">3. Sisu ja paigaldus</p>
+<p>div class=hero-img" -> suur taustapilt esilehel</p>
+<p>div class=hero-text -> tekst hero pildi sees</p>
+<p>h1 -> suurim pealkiri</p>
+<p>h2 -> teise tasemel pealkiri (alapealkiri)</p>
+<p>main -> peasisu</p>
+<p>sectipn id="..." -> sisublokk, millel on kindel ID</p>
+<p>p -> kõik tekstid</p>
+<p>em -> kursiivne tekst</p>
+<p>u -> alla joonitud tekst</p>
+<p class="tumedam">4. Navigatsioon ja lingid</p>
+<p> nav aria-label="..." -> navigeerimisriba</p>
+<p> ul class="nav" -> loetelu linkidega</p>
+<p> li,a href="#sissejuhatus"<Sissejuhatus a,li -> loendi element lingiga, href="#id viib sama lehe sees õigesse kohta</p>
+<p> a href"..." target="blank" rel="noopener noreferrer" -> link teisele veebilehele, target="blank avab lingi uues aknas ja rel on turvalisuse pärast</p>
+<p class="tumedam">5. Meedia</p>
+<p> video controls width="640" height="360" poster="..." -> video element, poster on pilt, mis kuvatakse enne video käivitamist ja controls lisab mängimise nupud</p>
+<p>source src"..." type="video/mp4 -> video allikas</p>
+<p>img src="..." alt="..." class"..." -> pilt, kus src on faili asukoht, alt alternatiivne tekst, class CSS-i jaoks stiilide sidumine</p>
+ <p><em><u>CSS faili seletus</u></em></p>
+ <p class="tumedam">1. Mõõdud ja paigutus</p>
+ <p>width/height -> määrab elemendi laiuse ja kõrguse</p>
+ <p>margin -> välisvahe teiste elementidega</p>
+ <p>padding -> sisemine vahe elemendi serva ja sisu vahel</p>
+ <p>float: left -> paneb elemendi liikumna teksti kõrvale vasakule</p>
+ <p>display: flex -> paigutab elemendid reas või veerus paindlikult</p>
+ <p>justify-content: centre -> seab flex-elemendid horisontaalselt keskele</p>
+ <p>gap -> vahe flex või grid elementide vahel</p>
+ <p>position: relative -> alus positsioneerimiseks</p>
+ <p>position: absulute -> paigutab elemdi täpselt kordinaatitega</p>
+ <p>transform: translate(-50%, -50%) -> nihutab elemendi täpselt keskele</p>
+ <p class="tumedam">2. Värvid ja taust</p>
+ <p>color -> teksti värv</p>
+<p>background-color -> taustavärv</p>
+<p>vackground-image -> lisab taustapildi</p>
+<p>background-position -> määrab, kust taustapilt algab</p>
+<p>background-repeat: no-repeat -> keelab taustapildi kordumise</p>
+<p>background-size: cover -> venitab taustapildi nii, et see katab kogu ala</p>
+<p>linear-gradient -> värvide üleminek sirgjooniliselt</p>
+<p>radial-gradient -> värvide üleminek ringikujuliselt</p>
+<p class="tumedam">3. Tekst ja font</p>
+<p>font-family -> määrab kasutava kirjatüübi</p>
+<p>font-size -> teksti suurus</p>
+<p>font-weight: bold -> paks tekst</p>
+<p>line-height -> lõikude rea kõrgus</p>
+<p>text-align: centre -> tekst keskele</p>
+<p>text-decoration: underline -> alla joonitud tekst</p>
+<p>clamp(min, soovituslik, max) -> automaatselt kohanduv font või mõõt vastavalt ekraani suurusele</p>
+<p class="tumedam">4. Pildid ja meedia</p>
+<p>border-radius -> ümarad nurgad</p>
+<p>float -> paneb pildi teksti kõrvale</p>
+<p>.gif {width: ..., height: ..., border-radius: ... } -> määrab GIF-i suuruse ja ümardab nurgad</p>
+<p class="tumedam">5. Lingid ja menüüd</p>
+<p>list-style: none -> eemaldab loendi täpid</p>
+<p>text-decoration: none -> eemaldab lingi allajoonimise</p>
+<p>transition: color o.3s ease -> teeb värvimuutuse sujuvaks</p>
+<p>:hover -> stiil, mis rakendub, kui hiir liigub elemendi peale</p>
+<p>:active -> stiil, kui elementi vajutatakse</p>
+<p class="tumedam">6. Ekstra</p> 
+<p>@font-face {...} -> lubab lisada omaenda fondifailis projekti kaustast</p>
+<p>vh/vw -> mõõtühikud, mis võtavad aluseks ekraani kõrguse või laiuse protsendi</p>
+<p>rem/em -> mõõtühikud, mis sõltuvad fontide suurusest</p>
+
     </section>
     <section id="kontakt">
       <h2>Kontakt</h2>
