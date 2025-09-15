@@ -38,11 +38,8 @@ html {
   gap: 1rem;
 }
 
-
 @media (max-width: 600px) {
   .hero-image {
-    height: 100vh; 
+    height: 100vh;
   }
-} 
-
-
+}
